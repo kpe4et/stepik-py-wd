@@ -14,3 +14,7 @@ def test_language(browser):
         assert assertion_text == "Add to basket"
     elif language == 'es':
         assert assertion_text == "Añadir al carrito"
+    elif language == 'fr':
+        assert assertion_text == "Ajouter au panier"
+    else: 
+        assert len(assertion_text) > 0, "Button not found"
