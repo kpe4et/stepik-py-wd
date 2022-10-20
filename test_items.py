@@ -3,7 +3,7 @@ import time
 
 link = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/'
 
-def test_language(browser):
+def test_add_to_cart_button_exists_and_some_language_cheks(browser):
     #получаем кортеж браузер + язык и раскидываем по переменным браузер и язык
     browser, language = browser
     browser.get(link)
